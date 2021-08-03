@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
@@ -16,22 +13,93 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__top">
-                    <div class="header__logo logo">
-                        <img class="logo__img" src="" alt="">
+                <div class="header__top row">
+                    <div class="header__logo logo col-xl-3">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="">
+                        </a>
                     </div>
-                    <nav class="header__navigation">
+                    <nav class="header__navigation col-xl-8 offset-xl-1">
                         <ul class="header__menu menu-list" id="menu-list">
-                            <li class="menu-list__item"><a class="menu-list__item-link">On sale</a></li>
-                            <li class="menu-list__item"><a class="menu-list__item-link">For rent</a></li>
-                            <li class="menu-list__item"><a class="menu-list__item-link">New Residential Project</a></li>
-                            <li class="menu-list__item"><a class="menu-list__item-link">Property News</a></li>
+                            <li class="menu-list__item"><a class="menu-list__item-link" href="#">On sale</a></li>
+                            <li class="menu-list__item"><a class="menu-list__item-link" href="#">For rent</a></li>
+                            <li class="menu-list__item"><a class="menu-list__item-link" href="#">New Residential Project</a></li>
+                            <li class="menu-list__item"><a class="menu-list__item-link" href="#">Property News</a></li>
                         </ul>
                     </nav>
                 </div>
-
+                <div class="header__center row">
+                    <h1 class="header__title col-xl-8">Quality home services, on demand</h1>
+                    <p class="header__text col-xl-8">Experienced, hand-picked Professionals to serve you at your doorstep</p>
+                    <form class="header__form form-search col-xl-12" action="">
+                        <input class="city" type="text">
+                        <input class="address" type="text">
+                        <input class="square" type="text">
+                        <input class="floor" type="text">
+                        <input class="price" type="text">
+                        <input class="money" type="text">
+                        <button class="form-search__btn">search</button>
+                    </form>
+                </div>
             </div>
         </header>
+        <main>
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages__photos row">
+                        <div class="advantages__photo-item photo-item col-xl-4">
+                            <div class="photo-item__img"></div>
+                            <p class="photo-item__text">
+                                Same great quality. New lower prices.
+                            </p>
+                        </div>
+                        <div class="advantages__photo-item photo-item col-xl-4">
+                            <div class="photo-item__img"></div>
+                            <p class="photo-item__text">
+                                Same great quality. New lower prices.
+                            </p>
+                        </div>
+                        <div class="advantages__photo-item photo-item col-xl-4">
+                            <div class="photo-item__img"></div>
+                            <p class="photo-item__text">
+                                Same great quality. New lower prices.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__why row">
+                        <div class="advantages__text col-xl-7">
+                            <h2 class="advantages__title">Why HOUSESALE Company?</h2>
+                            <div class="advantages__text-item text-item">
+                                <img class="text-item__img" src="img/text-item1.svg" alt="">
+                                <h3 class="text-item__title">Transparent pricing</h3>
+                                <p class="text-item__text">See fixed prices before you book. No hidden charges.</p>
+                            </div>
+                            <div class="advantages__text-item text-item">
+                                <img class="text-item__img" src="img/text-item2.svg" alt="">
+                                <h3 class="text-item__title">Experts only</h3>
+                                <p class="text-item__text">Our professionals are well trained and have on-job expertise.</p>
+                            </div>
+                            <div class="advantages__text-item text-item">
+                                <img class="text-item__img" src="img/text-item3.svg" alt="">
+                                <h3 class="text-item__title">Fully equipped</h3>
+                                <p class="text-item__text">We bring everything needed to get the job done well.</p>
+                            </div>
+                        </div>
+                        <div class="advantages__slider col-xl-5"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="book">
+                <div class="container">
+                    <h3 class="book__title">Book professionals from your phone</h3>
+                    <div class="book__form">
+                        <label class="book__form-phone-label" for="book__form-phone">Enter your mobile number to get the professionals help</label>
+                        <input class="book__form-phone-input" type="text" name="book__form-phone">
+                        <button class="book__form-button btn">send</button>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

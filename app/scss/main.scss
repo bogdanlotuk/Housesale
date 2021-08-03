@@ -18,21 +18,26 @@ a {
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
-    color: $red;
+    color: inherit;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: #fff;
     background: #E5E5E5;
 }
 
+ul, ol {
+    list-style-type: none;
+}
+
 .wrapper {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
-    max-width: 1241px;
+    max-width: 1265px;
 }
