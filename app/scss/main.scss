@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: $red;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #E5E5E5;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.container {
+    max-width: 1241px;
+}
