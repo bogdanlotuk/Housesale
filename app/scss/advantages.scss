@@ -1,0 +1,104 @@
+.advantages {
+    background: $white;
+    color: $black;
+    .container {
+        padding: 74px 0 98px;
+    }
+    &__photos {
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    &__photo-item {}
+    &__why {
+
+    }
+    &__text {
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 49px;
+        color: #323232;
+        margin-bottom: 80px;
+    }
+    &__text-item {}
+    &__slider {
+        width: 425px;
+        height: 555px;
+        outline: 1px solid $yellow;
+    }
+}
+
+.photo-item {
+    width: 399px;
+    height: 547px;
+
+    &__img {
+        height: 414px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__text {
+        display: flex;
+        height: 133px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-family: Nunito;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        padding-left: 70px;
+        color: $black;
+        box-shadow: 1px 4px 4px #E1DFD9;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 38px;
+            height: 38px;
+            background: url(../img/arrow.svg) no-repeat center,
+                        $yellow;
+            border-radius: 50%;
+            left: 30px;
+            box-shadow: 1px 4px 4px #E1DFD9;
+        }        
+    }
+    &__text:hover {
+        transition: all 0.3s ease-out;
+        background-color: $yellow;
+        color: $black;
+        &::before {
+            background: url(../img/arrow.svg) no-repeat center,
+                        $white;
+            box-shadow: 1px 4px 4px #808080;
+        }        
+    }
+}
+
+.text-item {
+        margin-bottom: 50px;
+    &__img {
+        display: block;
+        float: left;
+        margin: -7px 30px 0 0;
+        height: 92px;
+        width: 92px;
+
+    }
+    &__main {
+    }
+    &__title {
+        margin: 0 0 10px 0;
+        font-size: 29px;
+        line-height: 40px;
+        color: #4A4A4A;
+    }
+    &__text {
+        font-size: 21px;
+        line-height: 29px;
+        color: #4A4A4A;
+    }
+}
+
